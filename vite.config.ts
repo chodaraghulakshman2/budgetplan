@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/reactdeployex/' : '/',
+  base: mode === 'production' ? './' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
