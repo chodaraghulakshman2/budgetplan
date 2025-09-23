@@ -21,7 +21,7 @@ const Index = () => {
     {
       id: "1",
       type: "income",
-      amount: 3500,
+      amount: 75000,
       category: "Salary",
       description: "Monthly salary",
       date: "2024-01-01",
@@ -29,7 +29,7 @@ const Index = () => {
     {
       id: "2",
       type: "expense",
-      amount: 1200,
+      amount: 25000,
       category: "Housing",
       description: "Rent payment",
       date: "2024-01-02",
@@ -37,7 +37,7 @@ const Index = () => {
     {
       id: "3",
       type: "expense",
-      amount: 300,
+      amount: 8000,
       category: "Food",
       description: "Groceries",
       date: "2024-01-03",

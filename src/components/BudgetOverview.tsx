@@ -9,9 +9,9 @@ interface BudgetOverviewProps {
 
 export const BudgetOverview = ({ totalIncome, totalExpenses, balance }: BudgetOverviewProps) => {
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat("en-US", {
+    return new Intl.NumberFormat("en-IN", {
       style: "currency",
-      currency: "USD",
+      currency: "INR",
     }).format(amount);
   };
 
@@ -83,17 +83,17 @@ export const BudgetOverview = ({ totalIncome, totalExpenses, balance }: BudgetOv
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold text-warning">
-            {formatCurrency(1000)}
+            {formatCurrency(25000)}
           </div>
           <div className="mt-2">
             <div className="w-full bg-muted rounded-full h-2">
               <div 
                 className="bg-gradient-to-r from-success to-success-light h-2 rounded-full transition-all duration-500"
-                style={{ width: `${Math.min((balance / 1000) * 100, 100)}%` }}
+                style={{ width: `${Math.min((balance / 25000) * 100, 100)}%` }}
               />
             </div>
             <p className="text-xs text-muted-foreground mt-1">
-              {Math.min(((balance / 1000) * 100), 100).toFixed(0)}% of monthly goal
+              {Math.min(((balance / 25000) * 100), 100).toFixed(0)}% of monthly goal
             </p>
           </div>
         </CardContent>
