@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, TrendingDown, Calendar } from "lucide-react";
-import type { Transaction } from "@/pages/Index";
+import type { Transaction } from "@/types";
 
 interface TransactionListProps {
   transactions: Transaction[];
