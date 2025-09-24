@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  budget-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: budget-planner
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+
+networks:
+  default:
+    name: budget-network
