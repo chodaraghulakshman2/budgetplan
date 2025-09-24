@@ -1,5 +1,7 @@
 # Multi-stage build for React app
-FROM node:18-alpine as build
+FROM node:18-alpine AS build
+ENV NODE_ENV=development
+ENV NPM_CONFIG_PRODUCTION=false
 
 # Set working directory
 WORKDIR /app
